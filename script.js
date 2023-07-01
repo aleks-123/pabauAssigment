@@ -1,34 +1,33 @@
 $(document).ready(function () {
   $("#leadForm").submit(function (event) {
-    event.preventDefault(); // Prevent the form from submitting normally
+    event.preventDefault(); // Prevent form submission
 
-    var password = $("#password").val();
-    var email = $("#email").val();
+    var form = $(this);
+    var formData = form.serialize();
 
-    var requestData = {
-      name: name,
-      email: email,
-    };
-
-    console.log(requestData);
-
+    // Make AJAX request
     $.ajax({
-      url: "https://migration.pabau.me", // Replace with the appropriate URL
-      type: "POST",
+      url: "https://migration.pabau.me",
+      type: "GET",
+      data: formData,
       headers: {
-        Authorization: "Bearer MTIzMDka02efd5b36cb3a55fccc71d09e036a31", // Replace with your actual API key
+        "API-Key": "MTIzMDka02efd5b36cb3a55fccc71d09e036a31",
       },
-      data: requestData,
       success: function (response) {
-        console.log("Lead created successfully!");
-        console.log(response); // Log the response data to the console
-        // Perform any additional actions or display success message
+        console.log("Lead created successfully!", response);
+
+        // Import the response into your webpage
+        $("#responseContainer").html(response);
+
+        // Reset the form
+        form[0].reset();
       },
       error: function (xhr, status, error) {
-        console.log("Error creating lead. Please try again.");
-        console.log(error); // Log the error data to the console
-        // Handle the error or display error message
+        console.error("Error creating lead. Please try again.", error);
       },
     });
   });
+
+  // Automatically submit the form on page load
+  // $("#leadForm").trigger("submit");
 });

@@ -10,96 +10,154 @@
   <body>
     <header>
       <div class="menu">
-        <div class="menuLeft">Logo</div>
-        <div class="menuRight">MENU</div>
+        <div class="menuLeft">
+          <p>Logo</p>
+        </div>
+        <div class="menuRight">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
       <div class="bottomHead">
-        <h1>Pabau assigment</h1>
+        <h1>Pabau assigment - Web Developer</h1>
         <p>Made by: Aleksandar Milosheski</p>
+        <div class="area">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <div class="container">
       <div class="leftContainer">
-        <h2>We care about our people</h2>
+        <h2>Description:</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
-          ipsam ullam quod voluptates voluptatibus voluptatem iste animi ducimus
-          perferendis corporis architecto placeat id, est dignissimos
-          repellendus tenetur dicta asperiores odit.
+          In this assignment, I designed and developed an impressive interactive
+          web application by leveraging the combined power of JavaScript,
+          jQuery, AJAX, and CSS. By expertly utilizing these cutting-edge
+          technologies, I crafted a user experience that is both visually
+          captivating and functionally dynamic.
         </p>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
-          ipsam ullam quod voluptates voluptatibus voluptatem iste animi ducimus
-          perferendis corporis architecto placeat id, est dignissimos
-          repellendus tenetur dicta asperiores odit.
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
-          ipsam ullam quod voluptates voluptatibus voluptatem iste animi ducimus
-          perferendis corporis architecto placeat id, est dignissimos
-          repellendus tenetur dicta asperiores odit.
+          this assignment was a valuable opportunity for me to showcase my
+          proficiency in JavaScript, jQuery, AJAX, and CSS. By skillfully
+          integrating these technologies, I was able to create a truly
+          interactive web application that not only meets functional
+          requirements but also captivates users with its visually appealing
+          design and seamless user experience.
         </p>
       </div>
       <div class="rightContainer">
         <img
           class="img1"
-          src="123.webp"
-          alt="care aobut people"
-          width="200"
-          height="200"
+          src="css.png"
+          alt="picture of css"
+          width="150"
+          height="150"
         />
         <img
           class="img2"
-          src="123.webp"
-          alt="care aobut people"
-          width="200"
-          height="200"
+          src="html.png"
+          alt="picture of html"
+          width="150"
+          height="150"
         />
         <img
           class="img3"
-          src="123.webp"
-          alt="care aobut people"
-          width="200"
-          height="200"
+          src="js.png"
+          alt="picture of js"
+          width="150"
+          height="150"
         />
       </div>
     </div>
-    <div class="bottomCenter">
-      <div class="bottomLeft">
-        <h3>More about me:</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio unde
-          suscipit repellendus illum voluptatum praesentium pariatur officiis
-          consequuntur totam quo atque rerum porro sapiente, facilis itaque
-          mollitia quam nam fugit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla
-          tenetur explicabo aut doloribus, eligendi neque dolore vel, numquam
-          voluptate deleniti cum excepturi ad debitis blanditiis vero hic
-          laboriosam molestias!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-          deserunt laudantium harum ipsum quibusdam molestias, temporibus qui
-          possimus placeat. Aut facilis sint dignissimos nisi impedit ipsam ipsa
-          distinctio modi error.
-        </p>
-      </div>
-      <div class="bottomRight">
-        <div class="wrap">
-          <form id="leadForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="name">Password:</label>
-            <input type="text" id="password" name="password" required />
+    <div class="wrapbottom">
+      <div class="bottomCenter">
+        <div class="bottomLeft">
+          <h3>More about me:</h3>
+          <p>
+            I'm a web developer with a strong focus on front-end development
+            using React and JavaScript. I have hands-on experience building
+            responsive and interactive user interfaces using React, and I'm
+            proficient in modern JavaScript development practices.
+          </p>
 
-            <input type="submit" class="fadeIn fourth" value="Log In" />
-          </form>
+          <p>
+            I also have expertise in back-end development with Node.js and
+            Express. I have worked on server-side applications, RESTful APIs,
+            and database integration using these technologies. I enjoy creating
+            robust and scalable server-side solutions that complement the
+            front-end development.
+          </p>
+          <p>
+            Overall, I'm passionate about full-stack development and leveraging
+            the power of React, Node.js, and Express to build dynamic and
+            efficient web applications. I'm always eager to learn and explore
+            new technologies to enhance my skills as a developer."
+          </p>
+        </div>
+        <div class="bottomRight">
+          <div class="wrap">
+            <form
+              id="leadForm"
+              action="https://pabauclinic.pabau.me/OAuth2/leads/lead-curl.php"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="API-Key"
+                value="MTIzMDka02efd5b36cb3a55fccc71d09e036a31"
+              />
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+              /><br /><br />
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+              /><br /><br />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
+    <div id="responseContainer"></div>
+    <footer>
+      <div class="footerLeft">
+        <p>All rights reserved by Aleksandar Milosheski</p>
+      </div>
+      <div class="footerRight">
+        <p>Pabau Assigment</p>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
