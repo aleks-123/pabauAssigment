@@ -382,16 +382,16 @@ footer {
 
 @media only screen and (max-width: 578px) {
   header {
+    font-size: 0.6rem;
+  }
+
+  .menu {
     font-size: 0.7rem;
-    padding: 10px;
-    width: 80%;
-    margin: 0 auto;
   }
 
   .bottomCenter {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container {
@@ -409,6 +409,9 @@ footer {
 
   .bottomLeft {
     padding-left: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
   }
 
   img {
@@ -418,23 +421,12 @@ footer {
 
   .wrap {
     padding: 2%;
-    width: 25%;
-    min-width: 250px;
-    margin: 0 auto;
+    width: 80%;
+    min-width: 200px;
+
     box-shadow: 0 0 5px #ccc;
     border: 1px solid #fff;
     color: #142d4c;
-  }
-
-  .bottomCenter {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .bottomLeft {
-    padding: 0;
-    width: 80%;
   }
 
   .rightContainer {
@@ -443,15 +435,5 @@ footer {
     height: 0;
     margin: 0;
     padding: 0;
-  }
-
-  .wrap {
-    padding: 1%;
-    width: 20%;
-    min-width: 200px;
-    margin: 0 auto;
-    box-shadow: 0 0 5px #ccc;
-    border: 1px solid #fff;
-    color: #142d4c;
   }
 }
