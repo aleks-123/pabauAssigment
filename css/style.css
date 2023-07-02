@@ -365,8 +365,8 @@ footer {
 @media (max-width: 1080px) {
   .navbar {
     position: fixed;
-    padding: 0.5rem 2rem;
     z-index: 10;
+    width: 95%;
   }
   .hamburger {
     display: block;
@@ -489,6 +489,12 @@ footer {
 }
 
 @media (max-width: 578px) {
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    width: 85%;
+  }
+
   header {
     font-size: 0.6rem;
   }
@@ -519,7 +525,7 @@ footer {
     padding-left: 50px;
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 
   img {
@@ -542,9 +548,5 @@ footer {
     display: none;
     height: 0;
     margin: 0;
-  }
-
-  .bottomLeft {
-    width: 80%;
   }
 }
