@@ -258,6 +258,7 @@ footer {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  padding: 0;
 }
 
 .circles li {
@@ -466,10 +467,6 @@ footer {
 
   .wrapbottom {
     font-size: 0.8rem;
-  }
-
-  .bottomLeft {
-    padding-left: 50px;
   }
 
   img {
