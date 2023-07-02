@@ -434,6 +434,9 @@ footer {
     display: none;
     height: 0;
     margin: 0;
-    padding: 0;
+  }
+
+  .bottomLeft {
+    width: 80%;
   }
 }
