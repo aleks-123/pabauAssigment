@@ -543,6 +543,7 @@ footer {
     box-shadow: 0 0 5px #ccc;
     border: 1px solid #fff;
     color: #142d4c;
+    padding-top: 30px;
   }
 
   .rightContainer {
