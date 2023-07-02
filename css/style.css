@@ -529,6 +529,8 @@ footer {
   .bottomLeft {
     text-align: center;
     padding: 0px;
+    width: 80%;
+    margin-bottom: 30px;
   }
 
   .bottomRight {
