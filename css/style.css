@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 11000;
+  padding: 0;
 }
 
 .nav-menu {
@@ -70,12 +70,13 @@ a {
 }
 
 header {
+  padding-top: 30px;
   color: #ececec;
   height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 30px;
+
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
   background: linear-gradient(to bottom right, #385170, #142d4c);
   font-size: 1.3rem;
@@ -362,7 +363,6 @@ footer {
 @media (max-width: 1080px) {
   .navbar {
     position: fixed;
-    padding: 0.5rem 2rem;
   }
 
   .hamburger {
@@ -441,7 +441,7 @@ footer {
   font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 778px) {
+@media (max-width: 778px) {
   header {
     font-size: 0.8rem;
   }
@@ -479,7 +479,7 @@ footer {
 
   .wrap {
     padding: 2%;
-    width: 25%;
+    width: 10%;
     min-width: 250px;
     margin: 0 auto;
     box-shadow: 0 0 5px #ccc;
@@ -494,7 +494,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 578px) {
+@media (max-width: 578px) {
   header {
     font-size: 0.6rem;
   }
