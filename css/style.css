@@ -22,7 +22,6 @@ body {
   justify-content: space-around;
   align-items: center;
   z-index: 11000;
-
   transform: translateY(-4.375rem);
 }
 
