@@ -1,11 +1,26 @@
 $(document).ready(function () {
+  $(".hamburger").on("click", function () {
+    $(this).toggleClass("active");
+    $(".nav-menu").toggleClass("active");
+  });
+
+  $(".nav-link").on("click", function () {
+    $(".hamburger").removeClass("active");
+    $(".nav-menu").removeClass("active");
+  });
+  document.querySelectorAll(".nav-link").forEach((n) =>
+    n.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    })
+  );
+
   $("#leadForm").submit(function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
     var form = $(this);
     var formData = form.serialize();
 
-    // Make AJAX request
     $.ajax({
       url: "https://migration.pabau.me",
       type: "GET",
@@ -16,7 +31,6 @@ $(document).ready(function () {
       success: function (response) {
         console.log("Lead created successfully!", response);
 
-        // Import the response into your webpage
         $("#responseContainer").html(response);
 
         // Reset the form
@@ -27,7 +41,4 @@ $(document).ready(function () {
       },
     });
   });
-
-  // Automatically submit the form on page load
-  // $("#leadForm").trigger("submit");
 });
