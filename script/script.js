@@ -17,6 +17,7 @@ $(document).ready(function () {
     })
   );
 
+  // this leadForm dont work
   $("#leadForm").submit(function (event) {
     event.preventDefault();
 
@@ -32,10 +33,7 @@ $(document).ready(function () {
       },
       success: function (response) {
         console.log("Lead created successfully!", response);
-
         $("#responseContainer").html(response);
-
-        // Reset the form
         form[0].reset();
       },
       error: function (xhr, status, error) {
